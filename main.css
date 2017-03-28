@@ -1,0 +1,62 @@
+html{
+  overflow: hidden;
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  background: #fff;
+}
+
+html,body,div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.menubar{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #fafcfc;
+  width: 230px;
+  border-right: solid 1px #dfe2e7;
+  font-size: 0.9em;
+}
+
+.content-root{
+  min-height: 100%;
+  position: relative;
+}
+
+.content{
+  padding-left: 0;
+  padding-right: 0;
+  width: 930px;
+  max-width: none;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  zoom:1;
+}
+
+
+@media (min-width: 768px){
+  .content-root {
+      padding-left: 230px;
+  }
+}
+
+
+@media (min-width: 1180px) {
+    .content-root{
+      background: #2d2d2d;
+      box-shadow: inset 780px 0 #fff, inset 781px 0 #dfe2e7, inset 790px 0 5px -10px rgba(0,0,0,0.1);
+    }
+}
