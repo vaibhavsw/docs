@@ -6,7 +6,7 @@
     <script type="text/javascript">
       var pathPrefix = false;
       var l = window.location;
-      console.log(l);
+      alert(l);
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         l.pathname.split('/').slice(0, 2 * pathPrefix).join('/') + '/?p=/' +
